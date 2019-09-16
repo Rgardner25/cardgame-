@@ -1,0 +1,1050 @@
+/* ---------- Font Import ------------ */
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+
+/* ---------- Icons ------------ */
+.med-icon {
+    font-size: 5em;
+}
+
+.playing-card {
+    background: #c76262;
+    border-radius: 2px;
+    width: 10px;
+    height: 20px;
+}
+
+
+/* ---------- Global ------------ */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+}
+
+div#root {
+  height: 100vh;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+.button-request {
+    background: #50cd98;
+    color: #fff;
+    border: 0;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border-radius: 0 0 7px 7px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: .2s ease-in-out;
+    margin-top: 4px;
+    padding: 10px;
+}
+
+.button-request:hover {
+    background: #438c6d;
+}
+
+.hidden {
+    width: 0 !important;
+    min-width: 0 !important;
+}
+
+.hidden-display {
+    display: none !important;
+}
+
+.hamburger-button {
+    font-size: 28px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border: none;
+    transition: .2s ease-in-out;
+}
+
+.hamburger-button:hover {
+    color: #51cd98;
+}
+
+.help-button {
+    font-size: 28px;
+    position: absolute;
+    top: 20px;
+    right: 11vw;
+    border: none;
+    transition: .2s ease-in-out;
+}
+
+.help-button:hover {
+    color: #51cd98;
+}
+
+.button-close {
+    background: transparent;
+    border: 0;
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    color: #fff;
+    font-size: 20px;
+    transition: .1s ease-in-out;
+}
+
+.button-submit-phase {
+    align-self: center;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 50px;
+    transition: .2s ease-in-out;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.button-submit-phase:hover {
+    color: #51cd98;
+}
+
+.button-submit-phase:hover {
+    color: #5ece66;
+}
+
+.dropdown-form-button {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    transition: .1s ease-in-out;
+    color: #000;
+}
+
+.dropdown-form-button:hover {
+    color: #51cd98;
+}
+
+.button-close:hover {
+    color: #c76262;
+}
+
+.menu-open {
+    transform: rotate(90deg);
+}
+
+input:focus {
+    outline: #5ece98 auto 5px;
+}
+
+.main-window {
+    flex: auto;
+    display: flex;
+    width: 100%;
+}
+
+.bottom-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    height: 20vh;
+    background: #1c2227;
+    width: 100%;
+    border-top: solid 5px #9bce5e;
+    overflow-x: auto;
+}
+
+.starting-rules-bottom-container {
+    overflow-x: initial;
+}
+
+.form-dropdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.dropdown-container-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 6px 20px;
+    border: 1px solid #8e8e8e;
+    border-radius: 7px;
+    position: relative;
+}
+
+.turn-form-plus {
+    font-size: 5em;
+    color: #1d2329;
+}
+
+.phase-form-bottom-content .turn-form-plus {
+    font-size: 20px;
+    color: #ffffff;
+    margin: 0 10px;
+}
+
+.turn-form-dependent-switch-container {
+    zoom: .7;
+}
+
+.label-option-container select {
+    background: #5ece98;
+    color: #fff;
+    font-size: 14px;
+    border: transparent;
+    -webkit-appearance: menulist-text;
+    padding: 5px;
+    position: relative;
+    width: 170px;
+    font-weight: 200;
+    border-radius: 0;
+    outline: none;
+}
+
+.label-option-container {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    margin: 14px 0px;
+}
+
+.game-board .label-option-container {
+    width: inherit;
+    margin: 0;
+}
+
+.game-board .label-options-container {
+    width: initial;
+    margin: 0px;
+}
+
+.label-option-container label {
+    padding: 5px 10px;
+    font-size: 1em;
+    font-weight: 300;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+}
+
+.switch.on {
+    background: #4fcd98 !important;
+    border: none;
+}
+
+
+/* -------- React Select Library (poor choice of class names .From-them...) -------- */
+.label-option-container .Select-input input {
+    width: auto !important;
+    color: #fff;
+}
+
+.game-board .label-option-container .Select-input input {
+    width: 20px !important;
+}
+
+.label-option-container .Select-control {
+    background: #50cd98;
+    border: none;
+    font-size: 14px;
+    letter-spacing: .7px;
+    transition: .1s ease-in-out;
+    cursor: pointer;
+}
+
+.game-board .label-option-container .Select-control {
+    border-radius: 4px 4px 0 0;
+}
+
+.label-option-container .Select-control .Select-placeholder {
+    color: #fff;
+}
+
+.label-option-container .Select.is-focused:not(.is-open) > .Select-control,
+.label-option-container .Select.is-focused > .Select-control {
+    background: #50cd98;
+    box-shadow: none;
+}
+
+.label-option-container .Select.is-focused > .Select-control {
+    background: #438c6d;
+}
+
+.label-option-container .Select-control:hover {
+    background: #438c6d;
+}
+
+.label-option-container .Select-value-label {
+    color: #fff !important;
+}
+
+.label-option-container .Select-arrow {
+    border-color: #fff transparent transparent;
+}
+
+.label-option-container .Select-arrow-zone:hover > .Select-arrow {
+    border-top-color: #fff !important;
+}
+
+.label-option-container .Select-menu-outer {
+    font-size: 14px;
+    letter-spacing: .7px;
+    border: 0;
+    border-top: 10px solid #fff;
+}
+
+.label-option-container .Select-menu-outer > div > div {
+    background: #50cd98;
+    color: #fff;
+    transition: .1s ease-in-out;
+}
+
+.label-option-container .Select-menu-outer > div > div:hover {
+    background: #438c6d;
+}
+
+.label-option-container .Select > .Select-control .Select-arrow {
+    transition: .1s ease-in-out;
+}
+
+.label-option-container .Select.is-open > .Select-control .Select-arrow {
+    border-color: transparent transparent #fff;
+}
+
+
+/* ---------- Parent Form ------------ */
+.parent-form {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    position: relative;
+}
+
+.parent-form-menu > [class^="parent-form-"] {
+    border-bottom: 2px solid #464646;
+}
+
+.parent-form-title-container {
+    display: flex;
+    align-items: center;
+}
+
+.parent-form-title-container .parent-form-menu-icon {
+    color: #5ece98;
+    font-size: 29px;
+}
+
+.parent-form-menu-section-title-container {
+    display: flex;
+    align-items: center;
+    color: #ababab;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+
+.parent-form-menu-section-title-container:hover {
+    background: #424242;
+    color: #fff;
+}
+
+.parent-form-menu-title {
+    margin: 0 10px;
+    padding: 20px 20px 20px 0px;
+}
+
+.parent-form-menu-section-title-container .parent-form-menu-icon {
+    color: #b3b3b3;
+}
+
+.parent-form-menu-section-title-container .parent-form-menu-icon {
+    font-size: 20px;
+}
+
+.parent-form .parent-form-menu-section-title {
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.parent-form-menu-icon {
+    width: 40px;
+    text-align: center;
+}
+
+.parent-form-menu-title {
+    margin: 0 10px;
+}
+
+.parent-form-game-title {
+    font-size: 29px;
+    color: #51cd98;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+
+.menu-box.bottom-border {
+    border-bottom: 2px solid #464646;
+}
+
+.menu-box {
+    padding: 20px;
+}
+
+.parent-form-menu-phases, 
+.parent-form-menu-options {
+    font-size: 13px;
+    letter-spacing: .5px;
+    font-weight: 200;
+}
+
+.parent-form-menu-phase-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.source-title {
+    color: #2fe48d;
+}
+
+.parent-form-menu-phase-icon {
+    width: 40px;
+    text-align: center;
+    font-size: 19px;
+    color: #b3b3b3;
+    font-weight: 900;
+}
+
+.parent-form .parent-form-menu-section-container {
+    background: #1c2228;
+}
+
+.parent-form-menu-options.phase-container:not(:first-child) {
+    margin-top: 40px;
+}
+
+.parent-form-menu {
+    background: #2d2d2d;
+    color: #ababab;
+    transition: .2s ease-in-out;
+    height: 100vh;
+    overflow-x: auto;
+    position: relative;
+    width: auto;
+    min-width: 211px;
+}
+
+.parent-form-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: auto;
+    position: relative;
+}
+
+.parent-form-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.parent-form-next {
+    display: flex;
+    align-items: center;
+    font-size: 10vh;
+    background: #5ece98;
+    border-left: #258e5b 5px solid;
+    color: #fff;
+    padding: 20px;
+}
+
+.parent-form-right-title {
+    font-size: 7em;
+    color: #51cd98;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.game-board-main-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-board-main-header > div {
+    margin: 0 20px;
+}
+
+.game-board-main-container .parent-form-right-title {
+    font-size: 2em;
+    width: initial;
+}
+
+.parent-form-right-title input {
+    font-size: 1em;
+    color: #51cd98;
+    font-weight: 700;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 30px;
+    border: 0px;
+    font-family: 'Poppins';
+}
+
+.starting-rules {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: auto;
+    width: 100%;
+}
+
+.starting-rules-form {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.starting-rules-name-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.starting-rules-players-title,
+.starting-rules-cards-title {
+  font-size: 2em;
+  font-weight: 200;
+  letter-spacing: .4px;
+  text-transform: uppercase;
+}
+
+.starting-rules-players-count-container,
+.starting-rules-cards-count-container
+ {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+
+.starting-rules-players-count,
+.starting-rules-cards-count {
+  font-size: 4em;
+}
+
+.starting-rules-players-buttons,
+.starting-rules-cards-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.starting-rules-players-buttons button, 
+.starting-rules-cards-buttons button {
+    border: none;
+    font-size: 17px;
+    color: #41905f;
+    transition: .1s ease-in-out;
+}
+
+.starting-rules-players-buttons button:hover, 
+.starting-rules-cards-buttons button:hover {
+    font-size: 34px;
+}
+
+.starting-rules-options-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.starting-rules-players,
+.starting-rules-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.starting-rules-icons-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.starting-rules-icons-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.starting-rules-bottom-icons {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.starting-rules-bottom-icons-card {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 2.5px;
+}
+
+.starting-rules-bottom-icons-cards {
+    max-width: 95px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+[class^="starting-rules-bottom-icons-player"] {
+    background: #e6e6e6;
+    padding: 9px;
+    border-radius: 50%;
+}
+
+.starting-rules-bottom-button {
+    cursor: pointer;
+    border: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 3em;
+    letter-spacing: .7px;
+    font-weight: 800;
+    background: #5ece98;
+    color: #fff;
+    margin-left: auto;
+    height: 100%;
+    border-left: 5px solid #438c6d;
+    width: 10vw;
+    transition: .1s ease-in-out;
+}
+
+.starting-rules-bottom-button:hover {
+    font-size: 5em;
+    background: #438c6d;
+}
+
+.game-board-bottom-button-container .starting-rules-bottom-button:hover {
+    font-size: 3em !important;
+    background: #438c6d;
+}
+
+.starting-button-next {
+    height: 100vh;
+}
+
+
+/* ---------- Phase Form ---------- */
+.phase-form {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.phase-form-form {
+    flex: auto;
+    overflow-x: auto;
+}
+
+.phase-form-bottom-container {
+    justify-content: flex-start;
+}
+
+.phase-form-bottom-group-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bottom-container-float {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100px;
+    width: 100%;
+}
+
+.bottom-content {
+    background: #5ece67;
+    color: #fff;
+    padding: 14px;
+    position: relative;
+    border-radius: 7px 7px 0px 0px;
+    padding-right: 50px;
+    margin: 10px 20px 0 20px;
+    font-size: 12px;
+    letter-spacing: .5px;
+    font-weight: 200;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bottom-content-group {
+    margin: 0 10px;
+}
+
+/* ---------- Win Condition ----------- */
+.win-condition {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.win-condition-form {
+    flex: auto;
+}
+
+
+/* ---------- Review Game ----------- */
+.review-game {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.review-game-content {
+    flex: auto;
+}
+
+.review-game-main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: whitesmoke;
+}
+
+.review-screen-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.review-screen-label {
+    margin: 0px 10px;
+}
+
+
+/* ---------- Help Menu --------- */
+.documentation-container {
+    display: flex;
+    flex-direction: row;
+    max-height: 70vh;
+    margin: 45px 0px;
+}
+
+.documentation-menu {
+    margin-right: 20px;
+    border-right: 2px solid #d0d0d0;
+    overflow: auto;
+    display: flex;
+    min-width: 200px;
+    flex-direction: column;
+}
+
+.documentation-menu-section {
+    border-bottom: 2px solid #d0d0d0
+}
+
+.documentation-sub-container {
+    font-size: 13px;
+    font-weight: 400;
+    text-indent: 10px;
+}
+
+.documentation-sub-container > .documentation-sub-container {
+    text-indent: 20px;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.documentation {
+    overflow: auto;
+}
+
+.documentation-title > a,
+.documentation-subtitle > a {
+    text-decoration: none;
+    color: #000;
+    transition: .1s ease-in-out;
+}
+
+.documentation-title > a:hover,
+.documentation-subtitle > a:hover {
+    color: #51cd98;
+}
+
+.documentation-section {
+    background: #f7f7f7;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.documentation-section-content {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.documentation-section-title {
+    font-size: 20px;
+    letter-spacing: .5px;
+    font-weight: 600;
+}
+
+.documentation-sub-section {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px dashed #b5b5b5;
+}
+
+.documentation-sub-section-title {
+    letter-spacing: .5px;
+    font-weight: 500;
+}
+
+.documentation-nested-sub-section-title {
+    letter-spacing: .5px;
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+/* ---------- Board ------------ */
+.game-board {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.game-board-main-overflow {
+    overflow-x: auto;
+    flex: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.game-board-main-container {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.game-board-players-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: #f7f7f7;
+    padding: 20px;
+    border-top: 5px solid #9bce5e;
+}
+
+.game-board-player-container {
+    margin: 10px 0;
+}
+
+.game-board-current-player-container {
+    display: flex;
+    flex-direction: row;
+    background: #2d2d2d;
+    color: #fff;
+    border-top: solid 5px #9bce5e;
+    height: 30vh;
+}
+
+.game-board-deck-field-container {
+    flex: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.deck-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 13px;
+}
+
+.game-board-current-player-instructions-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.game-board-current-player-drawer {
+    flex: auto;
+    padding: 20px;
+    overflow: auto;
+}
+
+.game-board-current-player-drawer-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.game-board-current-player-drawer-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.game-board-label-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.game-board-current-player-hand {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card-component-container {
+    margin: 10px;
+}
+
+.game-board-current-player-instructions {
+    padding: 20px 11px 20px 30px;
+    background: #1c2228;
+    border-right: 2px solid #464646;
+    font-size: 13px;
+    letter-spacing: .5px;
+    font-weight: 200;
+    color: #ababab;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.game-board-current-player-instructions-label {
+    width: 24px;
+    text-align: center;
+    margin-left: -12px;
+    font-weight: 300;
+}
+
+.game-board-current-player-instructions-group {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+
+/* ---------- Card ------------ */
+.card-component-image {
+    max-width: 84px;
+}
+
+
+/* ---------- Deck ------------ */
+.deck-button {
+    background: transparent;
+    border-radius: 6px;
+    padding: 2px;
+    border: solid 1px #bbbabb;
+}
+
+
+/* ---------- Player ------------ */
+.player-parent-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 20px 20px 20px 0px;
+    border-bottom: 4px dotted #585858;
+    color: #585858;
+}
+
+.player-parent-left-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+.player-parent-image {
+    font-size: 15px;
+}
+
+.player-parent-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 78px;
+    margin-top: 10px;
+}
+
+.player-parent-card {
+    margin: 1.5px;
+}
+
+.player-parent-right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.player-parent-right-group {
+    display: flex;
+    flex-direction: row;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: .7px;
+}
+
+.player-parent-right-group-name-label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.player-parent-right-group.select-options {
+    margin-top: 10px;
+    flex-direction: column;
+    display: flex;
+}
+
+.player-parent-label {
+    margin-right: 10px;
+}
+
